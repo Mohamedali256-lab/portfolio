@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOHAMED ALI AUHBACHI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="icofont/icofont.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">MOHAMED ALI AUHBACHE</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul class="menu" id="menu">
+            <li class="x" id="x">&times;</li>
+            <li><a href="#about">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#expertise">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Homme Me Section  -->
+    <section class="about" id="about">
+        <div class="about-image">
+        <!-- your photo -->
+            <img src="images/PROFILE.jpg" alt="Your Name">
+        </div>
+        <div class="about-content">
+            <h2>SUR MOI</h2>
+            <h3>Pourquoi m'embaucher pour votre prochain projet ?</h3>
+            <p>
+                Je suis directeur créatif et designer UI/UX à Tétouan. 
+                Je travaille dans le développement web et la presse écrite. 
+                J'aime transformer des problèmes 
+                complexes en designs simples, esthétiques et intuitifs.
+            </p>
+            <p>
+                Mon travail consiste à créer votre site web pour qu'il soit à la fois fonctionnel, 
+                convivial et attrayant. De plus,
+                j'apporte une touche personnelle à 
+                votre produit et veille à ce qu'il soit attrayant et facile à utiliser.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- services section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2>MES SERVICES</h2>
+            <h3>Mes fonctionnalités fournies</h3>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h4>Développement Web</h4>
+            <div class="service-divider"></div>
+            <p>Création de sites vitrines, e-commerce et applications web modernes avec HTML, CSS, JavaScript et plus</p>
+            <!-- <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a> -->
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service-card">
+            <div class="service-icon">
+                <i class="icofont-photoshop"></i>
+            </div>
+            <h4>Photoshop</h4>
+            <div class="service-divider"></div>
+            <p> Retouche photo professionnelle, création de visuels percutants, montages créatifs et design graphique sur mesure.</p>
+            <!-- <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a> -->
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-server"></i>
+            </div>
+            <h4>Développement backend</h4>
+            <div class="service-divider"></div>
+            <p> Conception d'APIs sécurisées, gestion de bases de données, logique serveur, et intégration avec le frontend.</p>
+            <!-- <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- projets -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-header">
+            <h2>PORTFOLIO</h2>
+            <h3>Mon travail</h3>
+        </div>
+        <!-- filter -->
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">TOUTE</button>
+            <button class="filter-btn" data-filter="frontend">Front-end</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="design">Photoshop</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Project 1 - Front-end -->
+            <div class="portfolio-item" data-category="frontend">
+            <img src="images/Design sans titre.png" alt="Boutique Adidas">
+            <div class="portfolio-overlay">
+                <h4>Boutique Adidas</h4>
+                <p>Développement front-end</p>
+                <a href="#" class="view-btn" id="buuton-page">Voir le projet</a>
+            </div>
+            </div>
+
+            <!-- Project 2 - Backend -->
+            <div class="portfolio-item" data-category="backend">
+            <img src="images/PLANNING.jpg" alt="Gestion de Planninig">
+            <div class="portfolio-overlay">
+                <h4>Gestion de Planninig</h4>
+                <p>Développement backend</p>
+                <a href="#" id="c-projet" class="view-btn">Voir le projet</a>
+            </div>
+            </div>
+
+            <!-- Project 3 - Photoshop -->
+            <div class="portfolio-item" data-category="design">
+            <img src="" alt="">
+            <div class="portfolio-overlay">
+                <h4></h4>
+                <p>Photoshop</p>
+                <a href="#" class="view-btn">Voir le projet</a>
+            </div>
+            </div>
+
+            <!-- Project 4 - Front-end -->
+            <!-- <div class="portfolio-item" data-category="frontend">
+            <img src="" alt="">
+            <div class="portfolio-overlay">
+                <h4></h4>
+                <p>Frontend Development</p>
+                <a href="#" class="view-btn">Voir le projet</a>
+            </div>
+            </div> -->
+
+            <!-- Project 5 - Backend -->
+            <!-- <div class="portfolio-item" data-category="backend">
+            <img src="" alt="">
+            <div class="portfolio-overlay">
+                <h4></h4>
+                <p>Développement backend</p>
+                <a href="#" class="view-btn">Voir le projet</a>
+            </div>
+            </div> -->
+
+            <!-- Project 6 - Photoshop -->
+            <!-- <div class="portfolio-item" data-category="design">
+            <img src="" alt="Branding">
+            <div class="portfolio-overlay">
+                <h4></h4>
+                <p>Photoshop</p>
+                <a href="#" class="view-btn">Voir le projet</a>
+            </div>
+            </div>
+        </div> -->
+    </section>
+
+
+
+    <!-- Compétences section -->
+    <section class="expertise" id="expertise">
+        <div class="section-header">
+            <h2>MON EXPERTISE</h2>
+            <h3>Compétences techniques</h3>
+        </div>
+
+        <div class="skills-container">
+            <!-- Row 1 -->
+            <div class="skill-item">
+            <div class="skill-info">
+                <span>Conception de sites Web</span>
+                <span>95%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 95%; background: #6e8efb;"></div>
+            </div>
+            <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            </div>
+
+
+
+            <!-- Row 2 -->
+            <div class="skill-item">
+            <div class="skill-info">
+                <span>Backend Development</span>
+                <span>90%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%; background: #4facfe;"></div>
+            </div>
+            <div class="skill-tags">
+                <span>C</span>
+                <span>PLSQL</span>
+                <span>SQL</span>
+            </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="skill-item">
+            <div class="skill-info">
+                <span>Outils de conception</span>
+                <span>80%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%; background: #43e97b;"></div>
+            </div>
+            <div class="skill-tags">
+                <span>Photoshop</span>
+            </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="skill-item">
+            <div class="skill-info">
+                <span>Outils de bureau</span>
+                <span>85%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%; background: #ff7e5f;"></div>
+            </div>
+            <div class="skill-tags">
+                <span>Word</span>
+                <span>Excel</span>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contacct foorm -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>CONTACTEZ-MOI</h2>
+            <h3>Envoyez-moi un message</h3>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+            <div class="form-row">
+                <div class="form-group">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Nom</label>
+                </div>
+                <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                <input type="tel" id="phone" name="phone">
+                <label for="phone">Téléphone</label>
+                </div>
+                <div class="form-group">
+                <select id="budget" name="budget">
+                    <option value="" disabled selected></option>
+                    <option value="500-1000">$500 - $1000</option>
+                    <option value="1000-5000">$1000 - $5000</option>
+                    <option value="5000+">$5000+</option>
+                </select>
+                <label for="budget">Budget</label>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Message</label>
+            </div>
+
+            <button type="submit" class="submit-btn">ENVOYER UN MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+            <h2 class="footer-logo">M.ALI</h2>
+            <p class="footer-description">
+               Développeur Web passionné, créant des expériences numériques modernes et intuitives.<br>
+                Toujours prêt à relever de nouveaux défis et à innover.<br>
+            </p>
+            </div>
+
+            <!-- Contact Info Columns -->
+            <div class="footer-columns">
+            <!-- Column 1 -->
+            <div class="footer-col">
+                <h3 class="footer-title">ENVOYER UN COURRIER</h3>
+                <ul class="footer-links">
+                <li><a href="Aouhbache7@gmail.com">Aouhbache7@gmail.com</a></li>
+                <li><a href="Aouhbache7@gmail.com">Aouhbache7@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col">
+                <h3 class="footer-title">INVITATION</h3>
+                <ul class="footer-links">
+                <li><a href="tel:+1234567890">+212 7 20 49 45 09</a></li>
+                <li><a href="tel:+1234567890">+212 7 20 49 45 09</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h3 class="footer-title">Médias sociaux</h3>
+                <div class="footer-address">
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="icofont-x"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>Created By <span style="color: #6e8efb;">M.Ali Auhbache.</span></p>
+        </div>
+    </footer>
+
+
+
+     <!-- Sidebar Page (adidas store) -->
+    <div id="sidebar-page" class="sidebar-page">
+        <span class="close-btn" id="close-sidebar">&times;</span>
+        <div class="sidebar-content">
+            <!-- Hna ghadi tmli b content  -->
+            <header>
+                <h1>Projet Adidas</h1>
+            </header>
+            <div class="lien-sit"><a target="_blank" href="https://mohamedali256-lab.github.io/Adidas-Store/">Accéder au site</a></div>
+
+            <section class="intro-video">
+            <div class="intro-text">
+                <h2>Bienvenue sur notre site Adidas</h2>
+                <p>
+                Ce site représente l’univers dynamique et sportif d’Adidas.
+                À travers cette plateforme, vous découvrirez les dernières tendances mode et sport,
+                les produits phares adaptés à chaque catégorie : femmes, hommes, enfants, ainsi que nos gammes dédiées au football, basketball et à la boxe.
+                Le design moderne, fluide et inspiré des valeurs Adidas offre une expérience utilisateur immersive.
+                Naviguez, explorez et laissez-vous inspirer par la puissance du style et de la performance.
+                </p>
+            </div>
+            <video controls>
+                <source src="images/vedeo de site web.mp4" type="video/mp4" />
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+            </section>
+
+            <section class="gallery">
+            <div class="card">
+                <img src="images/femmes.png" alt="Femme"/>
+                <h3>Femme</h3>
+                <p>Collection moderne pour femmes actives et stylées.</p>
+            </div>
+            <div class="card">
+                <img src="images/hommes.png" alt="Homme"/>
+                <h3>Homme</h3>
+                <p>Style sportif et confort ultime pour les hommes.</p>
+            </div>
+            <div class="card">
+                <img src="images/enfants.png" alt="Enfants"/>
+                <h3>Enfants</h3>
+                <p>Des tenues dynamiques pour les jeunes champions.</p>
+            </div>
+            <div class="card">
+                <img src="images/boxing.png" alt="Boxing"/>
+                <h3>Boxing</h3>
+                <p>Équipement pour la puissance et la performance.</p>
+            </div>
+            <div class="card">
+                <img src="images/football.png" alt="Football"/>
+                <h3>Football</h3>
+                <p>Dominez le terrain avec notre gamme football.</p>
+            </div>
+            <div class="card">
+                <img src="images/baskeetball.png" alt="Basketball"/>
+                <h3>Basketball</h3>
+                <p>Performance et style sur tous les parquets.</p>
+            </div>
+            </section>
+
+            <section class="section-contact">
+            <img src="images/cantact.jpg" alt="Contact"/>
+            <div class="contact-text">
+                <h2>Contact</h2>
+                <p>Pour toute question ou collaboration, n’hésitez pas à nous contacter. Nous sommes à votre écoute !</p>
+            </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Sidebar Page (c projet) -->
+   <div id="s-p" class="s-p">
+        <span class="close-btn" id="clos">&times;</span>
+        <div class="sid">
+            <!-- Hna ghadi tmli b content  -->
+            <header>
+                <h1>Exécution de l'Application C : Gestion de planning</h1>
+            </header>
+            <main>
+                <!-- etach 1 -->
+                <section class="step">
+                <img src="images/mot de pass etach .jpg" alt="Mot de passe">
+                <div>
+                    <h2>Mot de passe</h2>
+                    <p>Protection de l'accès au projet par mot de passe sécurisé.</p>
+                </div>
+                </section>
+                <!-- etach 2 -->
+                <section class="step">
+                <img src="images/gestion des taches.jpg" alt="Gestion des tâches">
+                <div>
+                    <h2>Gestion des tâches</h2>
+                    <p>Menu principal pour gérer les tâches disponibles dans le projet.</p>
+                </div>
+                </section>
+                <!-- etach 3 -->
+                <section class="step">
+                <img src="images/ajouter une tache.jpg" alt="Ajouter une tâche">
+                <div>
+                    <h2>1. Ajouter une tâche</h2>
+                    <p>Ajout manuel d'une nouvelle tâche dans le planning.</p>
+                </div>
+                </section>
+                <!-- etach 4 -->
+                <section class="step">
+                <img src="images/afficher le planninig.jpg" alt="Ajouter une tâche">
+                <div>
+                    <h2>2. Afficher le planning</h2>
+                    <p></p>
+                </div>
+                </section>
+                <!-- etach 5 -->
+                <section class="step">
+                <img src="images/afficher planning jour.jpg" alt="Ajouter une tâche">
+                <div>
+                    <h2>2.1 Afficher planning d'un joure</h2>
+                    <p></p>
+                </div>
+                </section>
+                <!-- etach 6 -->
+                <section class="step">
+                <img  src="images/planning semain.jpg" alt="Supprimer une tâche">
+                <div>
+                    <h2>2.2 afficher planing de la semain</h2>
+                    <p></p>
+                </div>
+                </section>
+
+                <!-- etach 7 -->
+                <section class="step">
+                <img  src="images/recgerche de tache.jpg" alt="Supprimer une tâche">
+                <div>
+                    <h2>3. Recherche du tache</h2>
+                    <p></p>
+                </div>
+                </section>
+                <!-- etach 8 -->
+                <section class="step">
+                <img  src="images/mot-cle.jpg" alt="Supprimer une tâche">
+                <div>
+                    <h2>3.1 Recherche par mot-cle</h2>
+                    <p></p>
+                </div>
+                </section>
+                <!-- etach 9-->
+                <section class="step">
+                <img  src="images/par jour.jpg" alt="Supprimer une tâche">
+                <div>
+                    <h2>3.2 Recherche par jour</h2>
+                    <p></p>
+                </div>
+                </section>
+
+                <!-- etach 10 -->
+                <section class="step">
+                <img style="height: 2Opx;" src="images/supremer.jpg" alt="Supprimer une tâche">
+                <div>
+                    <h2>4. Supprimer une tâche</h2>
+                    <p>Suppression d'une tâche spécifique (image à compléter).</p>
+                </div>
+                </section>
+                <!-- etach 5 -->
+                <section class="step">
+                <img src="images/sauvegarder le planning .jpg" alt="Sauvegarder le planning">
+                <div>
+                    <h2>5. Sauvegarder le planning</h2>
+                    <p>Enregistrement des données du planning dans un fichier local.</p>
+                </div>
+                </section>
+                <!-- etach 6 -->
+                <section class="step">
+                <img src="images/charger de planninig.jpg" alt="Charger le planning">
+                <div>
+                    <h2>6. Charger le planning</h2>
+                    <p>Chargement du planning existant depuis un fichier sauvegardé.</p>
+                </div>
+                </section>
+            </main>
+
+        </div>
+    </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
